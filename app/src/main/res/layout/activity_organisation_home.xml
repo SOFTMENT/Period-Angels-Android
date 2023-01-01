@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Organiser.OrganisationHomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Softment"
+            android:fontFamily="@font/sfprobold2"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_below="@+id/name"
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="20dp"
+            android:text="7869992341"
+            android:fontFamily="@font/sfpromedium2"
+            android:textColor="#EAEAEA"
+            android:textSize="12sp"
+            android:autoLink="phone"
+            android:textColorLink="#CDFF92"
+            />
+
+        <TextView
+            android:lineSpacingExtra="2dp"
+            android:layout_below="@+id/phone"
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:text="233/9b saket nagar bhopal 456665 madhya pradesh india"
+            android:layout_marginEnd="100dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textColor="#EFEFEF"
+            android:textSize="12sp"
+            />
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/address"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/edittext_back"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/typeImage"
+                android:layout_marginStart="8dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/shop"
+                />
+            <TextView
+                android:id="@+id/typeName"
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business"
+                android:fontFamily="@font/sfpromedium2"
+                android:textSize="12sp"
+                android:textColor="@color/app_black"
+                android:layout_marginStart="5dp"
+                />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/settings"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_settings_24" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#2CFFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Availability"
+                android:fontFamily="@font/sfprosemibold2"
+                android:textColor="@color/main_color"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select the products you have"
+                android:fontFamily="@font/sfpromedium2"
+                android:textColor="@color/grey"
+                android:textSize="13sp"
+                />
+            <LinearLayout
+
+                android:layout_marginTop="20dp"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/sanitarypadsRR"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/img1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circleview"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/pads" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/img1"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:text="Period Pads"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <CheckBox
+                        android:id="@+id/sanitarypadsCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:id="@+id/tamponsRR"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img2"
+                        android:gravity="center"
+                        android:background="@drawable/circleview"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/tampon"
+                            />
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/img2"
+                        android:textSize="13sp"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tampons"
+                        />
+
+                    <CheckBox
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tamponsCheck"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:id="@+id/menstrualcupRR"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img3"
+                        android:gravity="center"
+                        android:background="@drawable/circleview"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/menstrualcup"
+                            />
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/img3"
+                        android:textSize="13sp"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menstrual Cup"
+                        />
+
+                    <CheckBox
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/menstrualcupCheck"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:id="@+id/plasticfreeRR"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img4"
+                        android:gravity="center"
+                        android:background="@drawable/circleview"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:src="@drawable/leaves"
+                            />
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/img4"
+                        android:textSize="13sp"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plastic Free"
+                        />
+
+                    <CheckBox
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/plasticfreeCheck"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:id="@+id/reusableRR"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img5"
+                        android:gravity="center"
+                        android:background="@drawable/circleview"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:src="@drawable/reuse"
+                            />
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/img5"
+                        android:textSize="13sp"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reusable Products"
+                        />
+
+                    <CheckBox
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/reusableCheck"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Save"
+                android:fontFamily="@font/sfprosemibold2"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_back"
+                android:id="@+id/save"
+                android:backgroundTint="@color/main_color"
+                android:textColor="@color/white"
+                />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

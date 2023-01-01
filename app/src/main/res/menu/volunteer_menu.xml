@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/manageproducts"
+        android:title="Manage Products" />
+
+    <item
+        android:id="@+id/switchtouser"
+        android:title="Go to User" />
+
+    <item
+        android:id="@+id/switchToOrganisation"
+        android:title="Go to Organisation" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout" />
+
+</menu>

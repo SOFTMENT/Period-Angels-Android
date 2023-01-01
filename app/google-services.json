@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "931036689494",
+    "project_id": "period-angels",
+    "storage_bucket": "period-angels.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931036689494:android:56cad377e05057956fb7f7",
+        "android_client_info": {
+          "package_name": "in.softment.periodangels"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931036689494-5252radif786i4clljhfl0cmfj5fj9ca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJV3l6BYFNTps4akbzU1tVtKEGAFpIJ_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931036689494-5252radif786i4clljhfl0cmfj5fj9ca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

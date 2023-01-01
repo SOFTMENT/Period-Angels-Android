@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Fragment.FaqFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#95FFFFFF"
+        />
+
+    <LinearLayout
+        android:id="@+id/headLL"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:text="FAQs"
+            android:fontFamily="@font/sfprosemibold2"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:lineSpacingExtra="2dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="20dp"
+            android:text="Have a question? Have a look at our FAQs below. Still can’t find what you’re looking for? Never hesitate to get in touch. We’d love to hear from you!"
+            android:fontFamily="@font/sfpromedium2"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+    
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/headLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="top"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/points"
+                        />
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What is period poverty?"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <TextView
+
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Period poverty is the lack of access to period products due to financial constraints or availability. This can be caused by a wide range of life events that restrict access to sanitary products."
+                    android:fontFamily="@font/sfproregular2"
+                    android:textSize="12sp"
+                    android:textColor="#121212"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+
+                >
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="top"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/points"
+                        />
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Who suffers from period poverty?"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anyone who menstruates and struggles to afford/obtain products at any point in life suffers from period poverty. Most who menstruate are cisgender women, however transgender men menstruate too, depending on the nature of their transition."
+                    android:fontFamily="@font/sfproregular2"
+                    android:textSize="12sp"
+                    android:textColor="#121212"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+
+                >
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="top"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/points"
+                        />
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What is a period and why do we have them?"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A period is when a woman bleeds from her vagina for a few days, once a month. It is an incredibly natural and normal process, and happens when an egg is not fertilised and the womb “cleans” itself from the now unwanted tissue and cells. It’s as simple as that."
+                    android:fontFamily="@font/sfproregular2"
+                    android:textSize="12sp"
+                    android:textColor="#121212"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+
+                >
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="top"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/points"
+                        />
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Can I stop myself from having my period?"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If you are constantly dealing with period poverty you may have begun to see your period as a nuisance and may be considering menstrual suppression through medication or online remedies. Menstrual suppression is not a healthy solution to period poverty and can create health issues for you in the future. Your menstrual cycle is delicate and shouldn’t be interfered with without advice from a doctor. If you are experiencing period poverty, please get in contact with your GP or your local foodbank. The healthiest and ONLY option if you are dealing with period poverty is finding a distribution centre near you for free sanitary products."
+                    android:fontFamily="@font/sfproregular2"
+                    android:textSize="12sp"
+                     android:textColor="#121212"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+
+                >
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="top"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/points"
+                        />
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How can I support those experiencing period poverty?"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Sign up as a Period Angels volunteer, collect products and donate them to a local organisation where those in need can access them.\n\n2. To make a one-off donation of period products, simply find a distribution organisation within your area on the Period Angels app.\n\n3. When going to purchase your own period products, consider purchasing from a company that donates towards tackling period poverty with each and every purchase you make such as Period Angel’s partner Gift Wellness.\n\n4. You can also support our work by making a financial donation at www.periodpoverty.uk"
+                    android:fontFamily="@font/sfproregular2"
+                    android:textSize="12sp"
+                    android:textColor="#121212"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+
+                >
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_marginTop="4dp"
+                     android:layout_gravity="top"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/points"
+                        />
+                    <TextView
+
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How can I get access to products for myself or someone I know who is experiencing period poverty?"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can use our Period Angels app to search for the products you need and to find a local distribution point near you to go and collect those products during their open hours."
+                    android:fontFamily="@font/sfproregular2"
+                    android:textSize="12sp"
+                    android:textColor="#121212"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+
+                >
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="top"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/points"
+                        />
+                    <TextView
+
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How can I avoid period poverty?"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can set up an affordable subscription as part of your monthly outgoings to prevent you from running out/forgetting to buy period products."
+                    android:fontFamily="@font/sfproregular2"
+                    android:textSize="12sp"
+                    android:textColor="#121212"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+
+                >
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="top"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/points"
+                        />
+                    <TextView
+
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Which period products are best for me to use?"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We recommend using natural products which are kinder to your body and the environment."
+                    android:fontFamily="@font/sfproregular2"
+                    android:textSize="12sp"
+                    android:textColor="#121212"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+
+                >
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="top"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/points"
+                        />
+                    <TextView
+
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What else can I do to help?"
+                        android:fontFamily="@font/sfpromedium2"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:textColorLink="#03A9F4"
+                    android:autoLink="web"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keep campaigning to the government to help make period products free for all.\n\nFor more advice on periods and period poverty, check out Planet Period on the Gift Wellness website https://giftwellness.co.uk/pages/planet-period"
+                    android:fontFamily="@font/sfproregular2"
+                    android:textSize="12sp"
+                    android:textColor="#121212"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

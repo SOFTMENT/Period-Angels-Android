@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Volunteer.VolunteerHomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Softment"
+            android:fontFamily="@font/sfprobold2"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_below="@+id/name"
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="20dp"
+            android:text="7869992341"
+            android:fontFamily="@font/sfpromedium2"
+            android:textColor="#EAEAEA"
+            android:textSize="12sp"
+            android:autoLink="phone"
+            android:textColorLink="#CDFF92"
+            />
+
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:lineSpacingExtra="2dp"
+            android:layout_below="@+id/phone"
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:text="233/9b saket nagar bhopal 456665 madhya pradesh india"
+            android:layout_marginEnd="100dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textColor="#EFEFEF"
+            android:textSize="12sp"
+            />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/settings"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_settings_24" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:background="#61FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Period Angels"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfprobold2"
+            />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VOLUNTEERS"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfprosemibold2"
+            />
+        <RelativeLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_back"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/sfprosemibold2"
+                android:text="5 Step Guide"
+                android:textColor="@color/main_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:textColor="#121212"
+            android:textAlignment="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Congratulations on becoming a Period Angels volunteer! With your support, WE WILL eliminate period poverty."
+            android:textSize="12sp"
+            android:fontFamily="@font/sfproregular2"
+            />
+        <TextView
+            android:textColor="#121212"
+            android:textAlignment="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here is your 5 step guide on how to run your campaign to collect period products for your local food banks and charity organisations"
+            android:textSize="12sp"
+            android:fontFamily="@font/sfproregular2"
+            />
+
+        <LinearLayout
+            android:backgroundTint="#94CB838E"
+            android:background="@drawable/edittext_back"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            >
+            <TextView
+
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 1"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sfprosemibold2"
+                />
+
+            <TextView
+                android:textColor="#121212"
+                android:textAlignment="center"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose the local organisation you wish to collect period products for"
+                android:textSize="12sp"
+                android:fontFamily="@font/sfproregular2"
+                />
+            <TextView
+
+                android:layout_marginBottom="12dp"
+                android:id="@+id/switchToOrganisation"
+                android:textColor="#00f"
+                android:textAlignment="center"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go to Organisations"
+                android:textSize="12sp"
+                android:fontFamily="@font/sfproregular2"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:backgroundTint="#94CB838E"
+            android:background="@drawable/edittext_back"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 2"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfprosemibold2"
+            />
+        <TextView
+            android:textColor="#121212"
+            android:textAlignment="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download your Period Angels volunteer pack
+for the full guide and resources needed for your collection campaign"
+            android:textSize="12sp"
+            android:fontFamily="@font/sfproregular2"
+            />
+        <TextView
+            android:id="@+id/periodAngelsPack"
+            android:layout_marginBottom="12dp"
+            android:textColor="#00f"
+            android:textAlignment="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Period Angels Volunteer Pack"
+            android:textSize="12sp"
+            android:fontFamily="@font/sfproregular2"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:backgroundTint="#94CB838E"
+            android:background="@drawable/edittext_back"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 3"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfprosemibold2"
+            />
+        <TextView
+            android:textColor="#121212"
+            android:layout_marginBottom="12dp"
+            android:textAlignment="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Run your campaign to collect period products.\nYou'll find some cool ideas in your pack!"
+            android:textSize="12sp"
+            android:fontFamily="@font/sfproregular2"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:backgroundTint="#94CB838E"
+            android:background="@drawable/edittext_back"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 4"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfprosemibold2"
+            />
+
+        <TextView
+            android:textColor="#121212"
+            android:layout_marginBottom="12dp"
+            android:textAlignment="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact your chosen organisation (nearest to you), and
+arrange the delivery of your collection (in person or picked up by the organisation)"
+            android:textSize="12sp"
+            android:fontFamily="@font/sfproregular2"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#94CB838E"
+            android:background="@drawable/edittext_back"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 5"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfprosemibold2"
+            />
+
+        <TextView
+            android:textColor="#121212"
+            android:layout_marginBottom="12dp"
+            android:textAlignment="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update your profile with the number of products you donated
+as part of your campaign\n\nWe want to celebrate your achievements, so do connect with us on social media
+so we can sing your praises!\nAlso check your email for your Period Angels Certificate of Recognition,
+once you have collected over 100 products and updated your profile."
+            android:textSize="12sp"
+            android:fontFamily="@font/sfproregular2"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

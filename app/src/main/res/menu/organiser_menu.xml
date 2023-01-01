@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/availability"
+        android:title="Manage Opening Times" />
+
+
+    <item
+        android:id="@+id/switchtouser"
+        android:title="Go to User" />
+
+    <item
+        android:id="@+id/switchtovolunteer"
+        android:title="Go to Volunteer" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout" />
+
+</menu>

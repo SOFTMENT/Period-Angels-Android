@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/edittext_back"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:backgroundTint="#D3CB838E"
+
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.3 KM"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="#F6F6F6"
+        android:fontFamily="@font/sfprosemibold2"
+        android:textSize="13sp"
+        android:layout_alignParentEnd="true"
+        />
+
+<TextView
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Softment Company"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"
+    android:textColor="@color/black"
+    android:fontFamily="@font/sfprosemibold2"
+    android:textSize="15sp"
+    />
+
+    <LinearLayout
+        android:id="@+id/typeLL"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/edittext_back"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        >
+
+        <ImageView
+        android:id="@+id/typeImage"
+        android:layout_marginStart="8dp"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/shop"
+        />
+        <TextView
+            android:id="@+id/typeName"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="12sp"
+            android:textColor="@color/app_black"
+            android:layout_marginStart="5dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pLL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/typeLL"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/periodPadsLL"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_back"
+            android:backgroundTint="#97343434"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_marginStart="8dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/pads"
+                />
+            <TextView
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Period Pads"
+                android:fontFamily="@font/sfpromedium2"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/tamponsLL"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_back"
+            android:backgroundTint="#97343434"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_marginStart="8dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/tampon"
+                />
+            <TextView
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tampons"
+                android:fontFamily="@font/sfpromedium2"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pLL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/pLL1"
+        android:layout_marginTop="-12dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/menstrualLL"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_back"
+            android:backgroundTint="#97343434"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_marginStart="8dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/menstrualcup"
+                />
+            <TextView
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menstrual Cup"
+                android:fontFamily="@font/sfpromedium2"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/plasticFreeLL"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_back"
+            android:backgroundTint="#97343434"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_marginStart="8dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/leaves"
+                />
+            <TextView
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plastic Free"
+                android:fontFamily="@font/sfpromedium2"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="5dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/reusableLL"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/pLL2"
+        android:layout_marginStart="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="-12dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_back"
+        android:backgroundTint="#97343434"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_marginStart="8dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/reuse"
+            />
+        <TextView
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reusable Products"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="5dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

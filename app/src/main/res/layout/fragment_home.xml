@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".Fragment.HomeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#95FFFFFF"
+        />
+    <RelativeLayout
+        android:id="@+id/searchRR"
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_toStartOf="@+id/notification"
+            app:theme="@style/AppSearchView"
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_back"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search Here ..." />
+
+        <androidx.cardview.widget.CardView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/notification"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_notifications_none_24" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/filterRR"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/searchRR"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/sfprosemibold2"
+        android:textColor="#121212"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORGANISATIONS"
+        />
+
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_filter_list_24"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            />
+
+    </RelativeLayout>
+<androidx.recyclerview.widget.RecyclerView
+
+    android:id="@+id/recyclerview"
+    android:layout_below="@+id/filterRR"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    />
+
+    <LinearLayout
+
+        android:id="@+id/no_organizers_available"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/magnifyingglass"
+            />
+        <TextView
+            android:fontFamily="@font/sfpromedium2"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Organizers Available"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>
